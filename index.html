@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="estilo.css">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <section class="sec1">
+      <p>
+        <label for="dia" id="idia">Dia</label><br>
+        <input type="number" name="dia" id="dia" required maxlength="2" max="31" placeholder="DD">
+      </p>
+      <p>
+        <label for="mes" id="imes">Mês</label><br>
+        <input type="number" name="mes" id="mes" required maxlength="2" max="12" placeholder="MM">
+      </p>
+      <p>
+        <label for="ano" id="iano">Ano</label><br>
+        <input type="number" name="ano" id="ano" required maxlength="4" placeholder="YYYY">
+      </p>
+    </section>
+    <section class="sec2">
+      <hr>
+      <div class="circle" onclick="calcular()"><img src="assets/images/icon-arrow.svg" alt="calcular"></div>
+    </section>
+    <section> 
+      <div class="div1"><p id="item1">--</p>Anos</div>
+      <div class="div2"><p id="item2">--</p>Meses</div>
+      <div class="div3"><p id="item3">--</p>Dias</div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
